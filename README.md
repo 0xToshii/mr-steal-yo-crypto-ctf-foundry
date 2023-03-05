@@ -1,4 +1,4 @@
-### All solutions are in test folder with attack smart contracts and solution writeups in test/AttackContracts
+**All solutions are in test folder with attack smart contracts and solution writeups in test/AttackContracts**
 
 # Mr Steal Yo Crypto CTF
 
